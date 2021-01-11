@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import './css/bootstrap.min.css'
+import { Component } from 'react';
+// import FirstComponent from './components/examples/FirstComponent';
+// import SecondComponent from './components/examples/SecondComponent';
+// import ThirdComponent from './components/examples/ThirdComponent';
+// import Counter from './components/counter/Counter'
+import BooksMgmt from './components/books/BooksMgmt'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <BooksMgmt></BooksMgmt>
+      </div>
+    );
+  }
 }
+
+// class LearningExamples extends Component {
+//   render() {
+//     return (
+//       <div className="App">
+//         Hi, Lets learn react !!
+//         <FirstComponent></FirstComponent>
+//         <SecondComponent></SecondComponent>
+//         <ThirdComponent></ThirdComponent>
+//       </div>
+//     );
+//   }
+// }
 
 export default App;
